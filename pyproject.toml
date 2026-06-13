@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sw2cadir"
+version = "0.1.0"
+description = "Convert SOLIDWORKS feature trees to explicit SimpleCADAPI scripts."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "pywin32; platform_system == 'Windows'",
+]
+
+[project.scripts]
+sw2cadir-extract = "sw2cadir.extract_sw_features:main"
+sw2cadir-generate = "sw2cadir.generate_simplecadapi:main"
+sw2cadir-audit = "sw2cadir.audit_feature_coverage:main"
+sw2cadir-verify = "sw2cadir.verify_outputs:main"
+
+[tool.setuptools.packages.find]
+include = ["sw2cadir*"]

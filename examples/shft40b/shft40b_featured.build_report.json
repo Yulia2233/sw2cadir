@@ -1,0 +1,2452 @@
+{
+  "source_json": "D:\\testModels\\sw2cadir\\examples\\shft40b\\feature_tree.json",
+  "feature_indices": [
+    19,
+    22,
+    25,
+    28,
+    31,
+    34,
+    37,
+    40,
+    43,
+    46
+  ],
+  "report": [
+    "OK add-extrude 凸台-拉伸1: solids=1",
+    "OK revolve 旋转1: solids=1",
+    "union kept mirrored residual body after subtracting existing overlap (volume=3924.426724)",
+    "union fused mirrored residual bodies after overlap trimming",
+    "OK add-extrude 凸台-拉伸2: solids=1",
+    "OK cut-extrude 切除-拉伸1: tools=1",
+    "OK cut-extrude 切除-拉伸2: tools=1",
+    "OK revcut 切除-旋转1: tools=1",
+    "OK revcut 切除-旋转2: tools=1",
+    "OK revcut 切除-旋转3: tools=1",
+    "OK cut-extrude 切除-拉伸3: tools=1",
+    "OK cut-extrude 切除-拉伸4: tools=1"
+  ],
+  "operation_trace": [
+    {
+      "feature_index": 19,
+      "feature_name": "凸台-拉伸1",
+      "feature_type": "Extrusion",
+      "status": "ok",
+      "rule": "add_extrude",
+      "sketch": {
+        "segment_counts": {
+          "line": 6,
+          "arc": 8,
+          "circle": 0,
+          "unsupported": 0
+        },
+        "coordinate_system": {
+          "origin_model_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "x_axis_model": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "y_axis_model": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "z_axis_model": [
+            1.0,
+            -0.0,
+            0.0
+          ]
+        },
+        "runtime_coordinate_system": {
+          "origin_model_m": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "x_axis_model": [
+            -0.0,
+            0.0,
+            1.0
+          ],
+          "y_axis_model": [
+            -0.0,
+            1.0,
+            0.0
+          ],
+          "z_axis_model": [
+            -1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "matrix_mode": "inverse"
+      },
+      "simplecadapi_ops": [
+        "make_segment_redge/make_three_point_arc_redge/make_circle_rwire",
+        "make_wire_from_edges_rwire/contour_wires/profile_wires",
+        "post_state_direction_candidate_match",
+        "extrude_rsolid",
+        "union_rsolid"
+      ],
+      "details": {
+        "solid_count": 1,
+        "solidworks_selection": {
+          "selected_contours_count": 0,
+          "selected_contours": [],
+          "feature_scope_bodies_count": 0,
+          "selection_manager_after_access": {
+            "count": 0,
+            "objects": []
+          }
+        },
+        "solidworks_feature_scope": {
+          "auto_select": false,
+          "feature_scope": true,
+          "assembly_feature_scope": true,
+          "auto_select_components": true,
+          "feature_scope_bodies_count": 0,
+          "feature_scope_bodies": []
+        },
+        "profile_selection": {
+          "policy": "solidworks_sketch_contour_segments",
+          "used_contour_indices": [
+            0
+          ],
+          "exported_contours_count": 1
+        },
+        "extrude_direction_selection": {
+          "policy": "post_state_candidate_match",
+          "selected_ignore_reverse_direction": true,
+          "default_ignore_reverse_direction": false,
+          "selected_score": [
+            1.2369127944111824e-10,
+            7.979477355951352e-14,
+            5.999998506922566e-07
+          ],
+          "selected_volume_delta_mm3": 1.2369127944111824e-10,
+          "candidates": [
+            {
+              "ignore_reverse_direction": false,
+              "score": [
+                1.2369127944111824e-10,
+                16.000000000000078,
+                5.999998506922566e-07
+              ],
+              "post_volume_mm3": 63886.15217059133,
+              "volume_delta_mm3": 1.2369127944111824e-10,
+              "center_delta_mm": [
+                16.0,
+                -2.876557709608006e-14,
+                5.014101804373333e-14
+              ],
+              "span_delta_mm": [
+                2.0000000233721948e-07,
+                1.9999984601781762e-07,
+                2.0000000233721948e-07
+              ]
+            },
+            {
+              "ignore_reverse_direction": true,
+              "score": [
+                1.2369127944111824e-10,
+                7.979477355951352e-14,
+                5.999998506922566e-07
+              ],
+              "post_volume_mm3": 63886.15217059133,
+              "volume_delta_mm3": 1.2369127944111824e-10,
+              "center_delta_mm": [
+                8.881784197001252e-16,
+                -2.876557709608006e-14,
+                5.014101804373333e-14
+              ],
+              "span_delta_mm": [
+                2.0000000233721948e-07,
+                1.9999984601781762e-07,
+                2.0000000233721948e-07
+              ]
+            }
+          ]
+        },
+        "simplecadapi_post_state": {
+          "volume_mm3": 63886.15217059133,
+          "surface_area_mm2": 12047.539685112974,
+          "center_mm": [
+            -7.999999999999999,
+            -1.2747995565044245e-14,
+            2.3837226620874734e-15
+          ],
+          "body_count": 1,
+          "bbox_mm": [
+            -16.0000001,
+            -28.0000001,
+            -51.0000001,
+            1.0000000198602732e-07,
+            28.0000001,
+            51.0000001
+          ],
+          "span_mm": [
+            16.000000200000002,
+            56.0000002,
+            102.0000002
+          ]
+        },
+        "solidworks_post_state": {
+          "volume_mm3": 63886.15217059121,
+          "surface_area_mm2": 12047.539685112934,
+          "center_mm": [
+            -8.0,
+            1.6017581531035815e-14,
+            -4.775729538164586e-14
+          ],
+          "bbox_mm": [
+            -16.0,
+            -28.000000000000004,
+            -51.0,
+            0.0,
+            28.000000000000156,
+            51.0
+          ],
+          "span_mm": [
+            16.0,
+            56.000000000000156,
+            102.0
+          ]
+        },
+        "post_state_delta": {
+          "volume_mm3": 1.2369127944111824e-10,
+          "surface_area_mm2": 4.001776687800884e-11,
+          "center_mm": [
+            8.881784197001252e-16,
+            -2.876557709608006e-14,
+            5.014101804373333e-14
+          ],
+          "span_mm": [
+            2.0000000233721948e-07,
+            1.9999984601781762e-07,
+            2.0000000233721948e-07
+          ],
+          "bbox_mm": [
+            -1.0000000116860974e-07,
+            -9.999999761589606e-08,
+            -1.0000000116860974e-07,
+            1.0000000198602732e-07,
+            9.999984484920788e-08,
+            1.0000000116860974e-07
+          ]
+        }
+      }
+    },
+    {
+      "feature_index": 22,
+      "feature_name": "旋转1",
+      "feature_type": "Revolution",
+      "status": "ok",
+      "rule": "add_revolve",
+      "sketch": {
+        "segment_counts": {
+          "line": 5,
+          "arc": 1,
+          "circle": 0,
+          "unsupported": 0
+        },
+        "coordinate_system": {
+          "origin_model_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "x_axis_model": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_axis_model": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "z_axis_model": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "runtime_coordinate_system": {
+          "origin_model_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "x_axis_model": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_axis_model": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "z_axis_model": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "matrix_mode": "inverse"
+      },
+      "simplecadapi_ops": [
+        "make_segment_redge/make_three_point_arc_redge",
+        "make_wire_from_edges_rwire/contour_wires/profile_wires",
+        "revolve_rsolid",
+        "union_rsolid"
+      ],
+      "details": {
+        "solid_count": 1,
+        "solidworks_selection": {
+          "selected_contours_count": 0,
+          "selected_contours": [],
+          "feature_scope_bodies_count": 1,
+          "selection_manager_after_access": {
+            "count": 0,
+            "objects": []
+          }
+        },
+        "solidworks_feature_scope": {
+          "auto_select": false,
+          "feature_scope": true,
+          "assembly_feature_scope": true,
+          "auto_select_components": true,
+          "feature_scope_bodies_count": 1,
+          "feature_scope_bodies": [
+            {
+              "name": "凸台-拉伸1",
+              "type_code": 0,
+              "body_box_m": [
+                -0.016,
+                -0.028000000000000004,
+                -0.051,
+                0.0,
+                0.028000000000000153,
+                0.051
+              ],
+              "mass_properties": [
+                -0.008,
+                1.6496647519902033e-17,
+                -4.784614062539038e-17,
+                6.388615217059121e-05,
+                0.012047539685112933,
+                6.388615217059121e-05,
+                5.120256393515475e-08,
+                4.2233945702989626e-08,
+                1.1694427391443673e-08,
+                4.411569349098636e-25,
+                6.299633331057933e-25,
+                -5.117425875378186e-24
+              ],
+              "selection_id": "凸台-拉伸1"
+            }
+          ]
+        },
+        "profile_selection": {
+          "policy": "solidworks_sketch_contour_segments",
+          "used_contour_indices": [
+            0
+          ],
+          "exported_contours_count": 1
+        },
+        "simplecadapi_post_state": {
+          "volume_mm3": 121237.9858955499,
+          "surface_area_mm2": 16029.546955885651,
+          "center_mm": [
+            -17.402680380080234,
+            -1.0277370844005807e-13,
+            9.975740477177526e-14
+          ],
+          "body_count": 1,
+          "bbox_mm": [
+            -40.0000001,
+            -29.418696670447154,
+            -51.0000001,
+            1.0000000198602732e-07,
+            29.418696670447154,
+            51.0000001
+          ],
+          "span_mm": [
+            40.0000002,
+            58.83739334089431,
+            102.0000002
+          ]
+        },
+        "solidworks_post_state": {
+          "volume_mm3": 121237.98589554899,
+          "surface_area_mm2": 16029.546955885502,
+          "center_mm": [
+            -17.402680380080312,
+            9.14973885344351e-15,
+            -3.1229668032304914e-14
+          ],
+          "bbox_mm": [
+            -40.0,
+            -28.000000000000004,
+            -51.0,
+            0.0,
+            28.000000000000156,
+            51.0
+          ],
+          "span_mm": [
+            40.0,
+            56.000000000000156,
+            102.0
+          ]
+        },
+        "post_state_delta": {
+          "volume_mm3": 9.022187441587448e-10,
+          "surface_area_mm2": 1.4915713109076023e-10,
+          "center_mm": [
+            7.815970093361102e-14,
+            -1.1192344729350158e-13,
+            1.3098707280408017e-13
+          ],
+          "span_mm": [
+            2.0000000233721948e-07,
+            2.8373933408941525,
+            2.0000000233721948e-07
+          ],
+          "bbox_mm": [
+            -1.0000000116860974e-07,
+            -1.4186966704471509,
+            -1.0000000116860974e-07,
+            1.0000000198602732e-07,
+            1.418696670446998,
+            1.0000000116860974e-07
+          ]
+        }
+      }
+    },
+    {
+      "feature_index": 25,
+      "feature_name": "凸台-拉伸2",
+      "feature_type": "ICE",
+      "status": "ok",
+      "rule": "add_extrude",
+      "sketch": {
+        "segment_counts": {
+          "line": 0,
+          "arc": 0,
+          "circle": 1,
+          "unsupported": 0
+        },
+        "coordinate_system": {
+          "origin_model_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "x_axis_model": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_axis_model": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "z_axis_model": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "runtime_coordinate_system": {
+          "origin_model_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "x_axis_model": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_axis_model": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "z_axis_model": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "matrix_mode": "inverse"
+      },
+      "simplecadapi_ops": [
+        "make_segment_redge/make_three_point_arc_redge/make_circle_rwire",
+        "make_wire_from_edges_rwire/contour_wires/profile_wires",
+        "post_state_direction_candidate_match",
+        "extrude_rsolid",
+        "union_rsolid"
+      ],
+      "details": {
+        "solid_count": 1,
+        "solidworks_selection": {
+          "selected_contours_count": 0,
+          "selected_contours": [],
+          "feature_scope_bodies_count": 1,
+          "selection_manager_after_access": {
+            "count": 0,
+            "objects": []
+          }
+        },
+        "solidworks_feature_scope": {
+          "auto_select": false,
+          "feature_scope": true,
+          "assembly_feature_scope": true,
+          "auto_select_components": true,
+          "feature_scope_bodies_count": 1,
+          "feature_scope_bodies": [
+            {
+              "name": "旋转1",
+              "type_code": 0,
+              "body_box_m": [
+                -0.04,
+                -0.028000000000000004,
+                -0.051,
+                0.0,
+                0.028000000000000153,
+                0.051
+              ],
+              "mass_properties": [
+                -0.01740268038008031,
+                9.076271113360423e-18,
+                -3.177549076694894e-17,
+                0.00012123798589554899,
+                0.0160295469558855,
+                0.00012123798589554899,
+                7.302192956697767e-08,
+                6.78349248673564e-08,
+                3.7295406555810455e-08,
+                1.6925204098708802e-25,
+                -4.7208113215226865e-23,
+                -6.2297039882902424e-24
+              ],
+              "selection_id": "旋转1"
+            }
+          ]
+        },
+        "profile_selection": {
+          "policy": "solidworks_sketch_contour_segments",
+          "used_contour_indices": [
+            0
+          ],
+          "exported_contours_count": 1
+        },
+        "extrude": {
+          "tool_mode": "single_centered_both_directions",
+          "depth_forward_mm": 11.0,
+          "depth_reverse_mm": 11.0
+        },
+        "extrude_direction_selection": {
+          "policy": "post_state_candidate_match",
+          "selected_ignore_reverse_direction": true,
+          "default_ignore_reverse_direction": false,
+          "selected_score": [
+            0.08935103462135885,
+            3.5465472162418566e-05,
+            1.4186974704471425
+          ],
+          "selected_volume_delta_mm3": 0.08935103462135885,
+          "candidates": [
+            {
+              "ignore_reverse_direction": false,
+              "score": [
+                0.08967315495829098,
+                3.541074180855317e-05,
+                1.4186974704471425
+              ],
+              "post_volume_mm3": 125162.41281992952,
+              "volume_delta_mm3": 0.08967315495829098,
+              "center_delta_mm": [
+                6.347467291334397e-06,
+                2.7853507718722526e-05,
+                1.2097667984962496e-06
+              ],
+              "span_delta_mm": [
+                2.9999999640040187e-07,
+                1.4186968704471496,
+                2.9999999640040187e-07
+              ]
+            },
+            {
+              "ignore_reverse_direction": true,
+              "score": [
+                0.08935103462135885,
+                3.5465472162418566e-05,
+                1.4186974704471425
+              ],
+              "post_volume_mm3": 125162.41249780919,
+              "volume_delta_mm3": 0.08935103462135885,
+              "center_delta_mm": [
+                6.364974879602414e-06,
+                2.7858458267582265e-05,
+                1.242039015233889e-06
+              ],
+              "span_delta_mm": [
+                2.9999999640040187e-07,
+                1.4186968704471496,
+                2.9999999640040187e-07
+              ]
+            }
+          ]
+        },
+        "simplecadapi_post_state": {
+          "volume_mm3": 125162.41249780919,
+          "surface_area_mm2": 16808.89426387927,
+          "center_mm": [
+            -17.48623353559084,
+            1.012488398570985,
+            1.6309023480176607e-08
+          ],
+          "body_count": 1,
+          "bbox_mm": [
+            -40.00000015,
+            -29.418696720447155,
+            -51.00000015,
+            1.5e-07,
+            39.00000015,
+            51.00000015
+          ],
+          "span_mm": [
+            40.000000299999996,
+            68.41869687044715,
+            102.0000003
+          ]
+        },
+        "solidworks_post_state": {
+          "volume_mm3": 125162.32314677456,
+          "surface_area_mm2": 16808.915342407774,
+          "center_mm": [
+            -17.48623990056572,
+            1.0124605401127174,
+            -1.2257299917537124e-06
+          ],
+          "bbox_mm": [
+            -40.0,
+            -28.000000000000004,
+            -51.0,
+            0.0,
+            39.0,
+            51.0
+          ],
+          "span_mm": [
+            40.0,
+            67.0,
+            102.0
+          ]
+        },
+        "post_state_delta": {
+          "volume_mm3": 0.08935103462135885,
+          "surface_area_mm2": -0.021078528505313443,
+          "center_mm": [
+            6.364974879602414e-06,
+            2.7858458267582265e-05,
+            1.242039015233889e-06
+          ],
+          "span_mm": [
+            2.9999999640040187e-07,
+            1.4186968704471496,
+            2.9999999640040187e-07
+          ],
+          "bbox_mm": [
+            -1.4999999820020093e-07,
+            -1.4186967204471514,
+            -1.4999999820020093e-07,
+            1.5e-07,
+            1.4999999820020093e-07,
+            1.4999999820020093e-07
+          ]
+        }
+      }
+    },
+    {
+      "feature_index": 28,
+      "feature_name": "切除-拉伸1",
+      "feature_type": "ICE",
+      "status": "ok",
+      "rule": "cut_extrude",
+      "sketch": {
+        "segment_counts": {
+          "line": 3,
+          "arc": 1,
+          "circle": 0,
+          "unsupported": 0
+        },
+        "coordinate_system": {
+          "origin_model_m": [
+            0.0,
+            0.0,
+            -0.011
+          ],
+          "x_axis_model": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_axis_model": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "z_axis_model": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "runtime_coordinate_system": {
+          "origin_model_m": [
+            0.0,
+            0.0,
+            0.011
+          ],
+          "x_axis_model": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_axis_model": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "z_axis_model": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "matrix_mode": "inverse"
+      },
+      "simplecadapi_ops": [
+        "make_segment_redge/make_three_point_arc_redge/make_circle_rwire",
+        "make_wire_from_edges_rwire/contour_wires/profile_wires/region_wires",
+        "post_state_direction_candidate_match",
+        "extrude_rsolid",
+        "cut_rsolid"
+      ],
+      "details": {
+        "tool_count": 1,
+        "solidworks_selection": {
+          "selected_contours_count": 0,
+          "selected_contours": [],
+          "feature_scope_bodies_count": 1,
+          "selection_manager_after_access": {
+            "count": 0,
+            "objects": []
+          }
+        },
+        "solidworks_feature_scope": {
+          "auto_select": false,
+          "feature_scope": true,
+          "assembly_feature_scope": true,
+          "auto_select_components": true,
+          "feature_scope_bodies_count": 1,
+          "feature_scope_bodies": [
+            {
+              "name": "凸台-拉伸2",
+              "type_code": 0,
+              "body_box_m": [
+                -0.04,
+                -0.028000000000000004,
+                -0.051,
+                0.0,
+                0.039,
+                0.051
+              ],
+              "mass_properties": [
+                -0.01748623990056572,
+                0.0010124605401127173,
+                -1.2257299915422289e-09,
+                0.00012516232314677456,
+                0.016808915342407773,
+                0.00012516232314677456,
+                7.719262638080947e-08,
+                6.811520980589014e-08,
+                4.1411857173664854e-08,
+                -3.2575256053544835e-10,
+                -3.1805119621980194e-15,
+                -2.4261862970502573e-15
+              ],
+              "selection_id": "凸台-拉伸2"
+            }
+          ]
+        },
+        "profile_selection": {
+          "policy": "solidworks_sketch_contour_segments",
+          "used_contour_indices": [
+            0
+          ],
+          "exported_contours_count": 1
+        },
+        "extrude_direction_selection": {
+          "policy": "post_state_candidate_match",
+          "selected_ignore_reverse_direction": true,
+          "default_ignore_reverse_direction": false,
+          "selected_score": [
+            0.09087925372296013,
+            3.603994373044955e-05,
+            1.4484857275421916
+          ],
+          "selected_volume_delta_mm3": 0.09087925372296013,
+          "candidates": [
+            {
+              "ignore_reverse_direction": false,
+              "score": [
+                3242.996103895435,
+                1.0109728026698106,
+                1.4484857275421916
+              ],
+              "post_volume_mm3": 121503.0671948593,
+              "volume_delta_mm3": -3242.996103895435,
+              "center_delta_mm": [
+                0.13657376394074205,
+                -0.7557020041346001,
+                -0.11869703459446844
+              ],
+              "span_delta_mm": [
+                -0.029785157095048476,
+                1.4186985704471482,
+                1.9999999949504854e-06
+              ]
+            },
+            {
+              "ignore_reverse_direction": true,
+              "score": [
+                0.09087925372296013,
+                3.603994373044955e-05,
+                1.4484857275421916
+              ],
+              "post_volume_mm3": 124746.15417800845,
+              "volume_delta_mm3": 0.09087925372296013,
+              "center_delta_mm": [
+                6.359384403964441e-06,
+                2.823910699834009e-05,
+                1.4414523281450209e-06
+              ],
+              "span_delta_mm": [
+                -0.029785157095048476,
+                1.4186985704471482,
+                1.9999999949504854e-06
+              ]
+            }
+          ]
+        },
+        "simplecadapi_post_state": {
+          "volume_mm3": 124746.15417800845,
+          "surface_area_mm2": 16879.629390429887,
+          "center_mm": [
+            -17.456278458833314,
+            0.940328733759405,
+            -0.04473267049439337
+          ],
+          "body_count": 1,
+          "bbox_mm": [
+            -40.000001,
+            -29.418697570447154,
+            -51.000001,
+            1e-06,
+            39.000001,
+            51.000001
+          ],
+          "span_mm": [
+            40.000001999999995,
+            68.41869857044715,
+            102.000002
+          ]
+        },
+        "solidworks_post_state": {
+          "volume_mm3": 124746.06329875473,
+          "surface_area_mm2": 16879.65018868309,
+          "center_mm": [
+            -17.456284818217718,
+            0.9403004946524066,
+            -0.044734111946721514
+          ],
+          "bbox_mm": [
+            -40.02978715709504,
+            -28.000000000000004,
+            -51.0,
+            0.0,
+            39.0,
+            51.0
+          ],
+          "span_mm": [
+            40.02978715709504,
+            67.0,
+            102.0
+          ]
+        },
+        "post_state_delta": {
+          "volume_mm3": 0.09087925372296013,
+          "surface_area_mm2": -0.020798253201064654,
+          "center_mm": [
+            6.359384403964441e-06,
+            2.823910699834009e-05,
+            1.4414523281450209e-06
+          ],
+          "span_mm": [
+            -0.029785157095048476,
+            1.4186985704471482,
+            1.9999999949504854e-06
+          ],
+          "bbox_mm": [
+            0.02978615709504595,
+            -1.4186975704471507,
+            -9.999999974752427e-07,
+            1e-06,
+            9.999999974752427e-07,
+            9.999999974752427e-07
+          ]
+        }
+      }
+    },
+    {
+      "feature_index": 31,
+      "feature_name": "切除-拉伸2",
+      "feature_type": "ICE",
+      "status": "ok",
+      "rule": "cut_extrude",
+      "sketch": {
+        "segment_counts": {
+          "line": 4,
+          "arc": 0,
+          "circle": 0,
+          "unsupported": 0
+        },
+        "coordinate_system": {
+          "origin_model_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "x_axis_model": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "y_axis_model": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "z_axis_model": [
+            1.0,
+            -0.0,
+            0.0
+          ]
+        },
+        "runtime_coordinate_system": {
+          "origin_model_m": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "x_axis_model": [
+            -0.0,
+            0.0,
+            1.0
+          ],
+          "y_axis_model": [
+            -0.0,
+            1.0,
+            0.0
+          ],
+          "z_axis_model": [
+            -1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "matrix_mode": "inverse"
+      },
+      "simplecadapi_ops": [
+        "make_segment_redge/make_three_point_arc_redge/make_circle_rwire",
+        "make_wire_from_edges_rwire/contour_wires/profile_wires/region_wires",
+        "post_state_direction_candidate_match",
+        "extrude_rsolid",
+        "cut_rsolid"
+      ],
+      "details": {
+        "tool_count": 1,
+        "solidworks_selection": {
+          "selected_contours_count": 0,
+          "selected_contours": [],
+          "feature_scope_bodies_count": 1,
+          "selection_manager_after_access": {
+            "count": 0,
+            "objects": []
+          }
+        },
+        "solidworks_feature_scope": {
+          "auto_select": false,
+          "feature_scope": true,
+          "assembly_feature_scope": true,
+          "auto_select_components": true,
+          "feature_scope_bodies_count": 1,
+          "feature_scope_bodies": [
+            {
+              "name": "切除-拉伸1",
+              "type_code": 0,
+              "body_box_m": [
+                -0.04008497975554369,
+                -0.028000000000000004,
+                -0.051,
+                0.0,
+                0.039,
+                0.051
+              ],
+              "mass_properties": [
+                -0.017456284803369436,
+                0.0009403005312198483,
+                -4.4734117198965934e-05,
+                0.00012474606358694876,
+                0.016879650188683155,
+                0.00012474606358694876,
+                7.692061726470234e-08,
+                6.798309717745364e-08,
+                4.116016521775447e-08,
+                -2.4547971340131355e-10,
+                4.998810314985781e-11,
+                -1.2075224352014857e-10
+              ],
+              "selection_id": "切除-拉伸1"
+            }
+          ]
+        },
+        "profile_selection": {
+          "policy": "solidworks_sketch_contour_segments",
+          "used_contour_indices": [
+            0
+          ],
+          "exported_contours_count": 1
+        },
+        "extrude_direction_selection": {
+          "policy": "post_state_candidate_match",
+          "selected_ignore_reverse_direction": false,
+          "default_ignore_reverse_direction": false,
+          "selected_score": [
+            0.0093067624111427,
+            2.067426092662583e-06,
+            1.4484857275421916
+          ],
+          "selected_volume_delta_mm3": 0.0093067624111427,
+          "candidates": [
+            {
+              "ignore_reverse_direction": false,
+              "score": [
+                0.0093067624111427,
+                2.067426092662583e-06,
+                1.4484857275421916
+              ],
+              "post_volume_mm3": 121557.55272317932,
+              "volume_delta_mm3": 0.0093067624111427,
+              "center_delta_mm": [
+                -2.9125050104994443e-07,
+                1.6989921041155043e-06,
+                7.718348749713444e-08
+              ],
+              "span_delta_mm": [
+                -0.029785157095048476,
+                1.4186985704471482,
+                1.9999999949504854e-06
+              ]
+            },
+            {
+              "ignore_reverse_direction": true,
+              "score": [
+                0.0093067624111427,
+                2.067426092662583e-06,
+                1.4484857275421916
+              ],
+              "post_volume_mm3": 121557.55272317932,
+              "volume_delta_mm3": 0.0093067624111427,
+              "center_delta_mm": [
+                -2.9125050104994443e-07,
+                1.6989921041155043e-06,
+                7.718348749713444e-08
+              ],
+              "span_delta_mm": [
+                -0.029785157095048476,
+                1.4186985704471482,
+                1.9999999949504854e-06
+              ]
+            }
+          ]
+        },
+        "simplecadapi_post_state": {
+          "volume_mm3": 121557.55272317932,
+          "surface_area_mm2": 19253.890931790615,
+          "center_mm": [
+            -17.391797146246294,
+            0.5369840693956401,
+            -0.045906064131268465
+          ],
+          "body_count": 1,
+          "bbox_mm": [
+            -40.000001,
+            -29.418697570447154,
+            -51.000001,
+            1e-06,
+            39.000001,
+            51.000001
+          ],
+          "span_mm": [
+            40.000001999999995,
+            68.41869857044715,
+            102.000002
+          ]
+        },
+        "solidworks_post_state": {
+          "volume_mm3": 121557.54341641691,
+          "surface_area_mm2": 19253.891010809337,
+          "center_mm": [
+            -17.391796854995793,
+            0.536982370403536,
+            -0.04590614131475596
+          ],
+          "bbox_mm": [
+            -40.02978715709504,
+            -28.000000000000004,
+            -51.0,
+            0.0,
+            39.0,
+            51.0
+          ],
+          "span_mm": [
+            40.02978715709504,
+            67.0,
+            102.0
+          ]
+        },
+        "post_state_delta": {
+          "volume_mm3": 0.0093067624111427,
+          "surface_area_mm2": -7.901872231741436e-05,
+          "center_mm": [
+            -2.9125050104994443e-07,
+            1.6989921041155043e-06,
+            7.718348749713444e-08
+          ],
+          "span_mm": [
+            -0.029785157095048476,
+            1.4186985704471482,
+            1.9999999949504854e-06
+          ],
+          "bbox_mm": [
+            0.02978615709504595,
+            -1.4186975704471507,
+            -9.999999974752427e-07,
+            1e-06,
+            9.999999974752427e-07,
+            9.999999974752427e-07
+          ]
+        }
+      }
+    },
+    {
+      "feature_index": 34,
+      "feature_name": "切除-旋转1",
+      "feature_type": "RevCut",
+      "status": "ok",
+      "rule": "revcut",
+      "sketch": {
+        "segment_counts": {
+          "line": 7,
+          "arc": 0,
+          "circle": 0,
+          "unsupported": 0
+        },
+        "coordinate_system": {
+          "origin_model_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "x_axis_model": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_axis_model": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "z_axis_model": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "runtime_coordinate_system": {
+          "origin_model_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "x_axis_model": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "y_axis_model": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "z_axis_model": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "matrix_mode": "inverse"
+      },
+      "simplecadapi_ops": [
+        "make_segment_redge/make_three_point_arc_redge",
+        "make_wire_from_edges_rwire/contour_wires/profile_wires",
+        "revolve_rsolid",
+        "mirror_shape/post_state_candidate_match",
+        "cut_rsolid"
+      ],
+      "details": {
+        "tool_count": 1,
+        "solidworks_selection": {
+          "selected_contours_count": 0,
+          "selected_contours": [],
+          "feature_scope_bodies_count": 1,
+          "selection_manager_after_access": {
+            "count": 0,
+            "objects": []
+          }
+        },
+        "solidworks_feature_scope": {
+          "auto_select": false,
+          "feature_scope": true,
+          "assembly_feature_scope": true,
+          "auto_select_components": true,
+          "feature_scope_bodies_count": 1,
+          "feature_scope_bodies": [
+            {
+              "name": "切除-拉伸2",
+              "type_code": 0,
+              "body_box_m": [
+                -0.04008497975554369,
+                -0.028000000000000004,
+                -0.051,
+                0.0,
+                0.039,
+                0.051
+              ],
+              "mass_properties": [
+                -0.017391796854241755,
+                0.0005369823703583611,
+                -4.590614175280778e-05,
+                0.00012155754341506496,
+                0.01925389101080934,
+                0.00012155754341506496,
+                7.583614606774501e-08,
+                6.75838960214742e-08,
+                3.9679898326807065e-08,
+                -1.2486590128951516e-10,
+                5.035134238485825e-11,
+                -1.230000823622072e-10
+              ],
+              "selection_id": "切除-拉伸2"
+            }
+          ]
+        },
+        "profile_selection": {
+          "policy": "solidworks_sketch_contour_segments",
+          "used_contour_indices": [
+            0
+          ],
+          "exported_contours_count": 1
+        },
+        "revolve_tool_selection": {
+          "policy": "post_state_volume_candidate_match",
+          "selected_mirror_axes": [],
+          "target_volume_mm3": 72308.13632107209,
+          "selected_post_volume_mm3": 72308.14562269683,
+          "selected_volume_delta_mm3": 0.009301624741056003,
+          "candidate_count": 8,
+          "candidates": [
+            {
+              "mirror_axes": [],
+              "post_volume_mm3": 72308.14562269683,
+              "volume_delta_mm3": 0.009301624741056003,
+              "removed_volume_mm3": 49249.407100482495
+            },
+            {
+              "mirror_axes": [
+                "x"
+              ],
+              "post_volume_mm3": 121557.55272317932,
+              "volume_delta_mm3": 49249.416402107236,
+              "removed_volume_mm3": 0.0
+            },
+            {
+              "mirror_axes": [
+                "y"
+              ],
+              "post_volume_mm3": 72308.14563783388,
+              "volume_delta_mm3": 0.009316761788795702,
+              "removed_volume_mm3": 49249.40708534545
+            },
+            {
+              "mirror_axes": [
+                "z"
+              ],
+              "post_volume_mm3": 72308.14562269683,
+              "volume_delta_mm3": 0.009301624741056003,
+              "removed_volume_mm3": 49249.407100482495
+            },
+            {
+              "mirror_axes": [
+                "x",
+                "y"
+              ],
+              "post_volume_mm3": 121557.55272317932,
+              "volume_delta_mm3": 49249.416402107236,
+              "removed_volume_mm3": 0.0
+            },
+            {
+              "mirror_axes": [
+                "x",
+                "z"
+              ],
+              "post_volume_mm3": 121557.55272317932,
+              "volume_delta_mm3": 49249.416402107236,
+              "removed_volume_mm3": 0.0
+            },
+            {
+              "mirror_axes": [
+                "y",
+                "z"
+              ],
+              "post_volume_mm3": 72308.14563783388,
+              "volume_delta_mm3": 0.009316761788795702,
+              "removed_volume_mm3": 49249.40708534545
+            },
+            {
+              "mirror_axes": [
+                "x",
+                "y",
+                "z"
+              ],
+              "post_volume_mm3": 121557.55272317932,
+              "volume_delta_mm3": 49249.416402107236,
+              "removed_volume_mm3": 0.0
+            }
+          ]
+        },
+        "simplecadapi_post_state": {
+          "volume_mm3": 72308.14562269683,
+          "surface_area_mm2": 20102.261579452148,
+          "center_mm": [
+            -15.363935057682719,
+            1.1844704940799116,
+            -0.07717289463051594
+          ],
+          "body_count": 1,
+          "bbox_mm": [
+            -40.000001,
+            -29.418697570447154,
+            -51.000001,
+            1e-06,
+            39.000001,
+            51.000001
+          ],
+          "span_mm": [
+            40.000001999999995,
+            68.41869857044715,
+            102.000002
+          ]
+        },
+        "solidworks_post_state": {
+          "volume_mm3": 72308.13632107209,
+          "surface_area_mm2": 20102.26163800215,
+          "center_mm": [
+            -15.363934306442372,
+            1.1844677237594985,
+            -0.07717302712893176
+          ],
+          "bbox_mm": [
+            -40.02978715709504,
+            -28.000000000000004,
+            -51.0,
+            0.0,
+            39.0,
+            51.0
+          ],
+          "span_mm": [
+            40.02978715709504,
+            67.0,
+            102.0
+          ]
+        },
+        "post_state_delta": {
+          "volume_mm3": 0.009301624741056003,
+          "surface_area_mm2": -5.855000199517235e-05,
+          "center_mm": [
+            -7.512403463749706e-07,
+            2.7703204130702375e-06,
+            1.3249841582241295e-07
+          ],
+          "span_mm": [
+            -0.029785157095048476,
+            1.4186985704471482,
+            1.9999999949504854e-06
+          ],
+          "bbox_mm": [
+            0.02978615709504595,
+            -1.4186975704471507,
+            -9.999999974752427e-07,
+            1e-06,
+            9.999999974752427e-07,
+            9.999999974752427e-07
+          ]
+        }
+      }
+    },
+    {
+      "feature_index": 37,
+      "feature_name": "切除-旋转2",
+      "feature_type": "RevCut",
+      "status": "ok",
+      "rule": "revcut",
+      "sketch": {
+        "segment_counts": {
+          "line": 8,
+          "arc": 0,
+          "circle": 0,
+          "unsupported": 0
+        },
+        "coordinate_system": {
+          "origin_model_m": [
+            0.0,
+            0.0,
+            0.02
+          ],
+          "x_axis_model": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "y_axis_model": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "z_axis_model": [
+            1.0,
+            -0.0,
+            0.0
+          ]
+        },
+        "runtime_coordinate_system": {
+          "origin_model_m": [
+            0.02,
+            0.0,
+            0.0
+          ],
+          "x_axis_model": [
+            -0.0,
+            0.0,
+            1.0
+          ],
+          "y_axis_model": [
+            -0.0,
+            1.0,
+            0.0
+          ],
+          "z_axis_model": [
+            -1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "matrix_mode": "inverse"
+      },
+      "simplecadapi_ops": [
+        "make_segment_redge/make_three_point_arc_redge",
+        "make_wire_from_edges_rwire/contour_wires/profile_wires",
+        "revolve_rsolid",
+        "mirror_shape/post_state_candidate_match",
+        "cut_rsolid"
+      ],
+      "details": {
+        "tool_count": 1,
+        "solidworks_selection": {
+          "selected_contours_count": 0,
+          "selected_contours": [],
+          "feature_scope_bodies_count": 1,
+          "selection_manager_after_access": {
+            "count": 0,
+            "objects": []
+          }
+        },
+        "solidworks_feature_scope": {
+          "auto_select": false,
+          "feature_scope": true,
+          "assembly_feature_scope": true,
+          "auto_select_components": true,
+          "feature_scope_bodies_count": 1,
+          "feature_scope_bodies": [
+            {
+              "name": "切除-旋转1",
+              "type_code": 0,
+              "body_box_m": [
+                -0.04008497975554369,
+                -0.028000000000000004,
+                -0.051,
+                0.0,
+                0.039,
+                0.051
+              ],
+              "mass_properties": [
+                -0.015363934305136844,
+                0.0011844677236956605,
+                -7.717302786592735e-05,
+                7.230813631972012e-05,
+                0.020102261638002158,
+                7.230813631972012e-05,
+                6.553839704806734e-08,
+                5.483153311324047e-08,
+                2.7134882918905688e-08,
+                -3.5905198329370917e-10,
+                6.166729767338057e-11,
+                -1.1938696010617886e-10
+              ],
+              "selection_id": "切除-旋转1"
+            }
+          ]
+        },
+        "profile_selection": {
+          "policy": "solidworks_sketch_contour_segments",
+          "used_contour_indices": [
+            0
+          ],
+          "exported_contours_count": 1
+        },
+        "revolve_tool_selection": {
+          "policy": "post_state_volume_candidate_match",
+          "selected_mirror_axes": [
+            "x",
+            "z"
+          ],
+          "target_volume_mm3": 71750.90833902892,
+          "selected_post_volume_mm3": 71750.9337381807,
+          "selected_volume_delta_mm3": 0.025399151782039553,
+          "candidate_count": 8,
+          "candidates": [
+            {
+              "mirror_axes": [],
+              "post_volume_mm3": 72308.14562269683,
+              "volume_delta_mm3": 557.2372836679133,
+              "removed_volume_mm3": 0.0
+            },
+            {
+              "mirror_axes": [
+                "x"
+              ],
+              "post_volume_mm3": 71752.43495783147,
+              "volume_delta_mm3": 1.526618802556186,
+              "removed_volume_mm3": 555.7106648653571
+            },
+            {
+              "mirror_axes": [
+                "y"
+              ],
+              "post_volume_mm3": 72308.14562269683,
+              "volume_delta_mm3": 557.2372836679133,
+              "removed_volume_mm3": 0.0
+            },
+            {
+              "mirror_axes": [
+                "z"
+              ],
+              "post_volume_mm3": 72308.14562269683,
+              "volume_delta_mm3": 557.2372836679133,
+              "removed_volume_mm3": 0.0
+            },
+            {
+              "mirror_axes": [
+                "x",
+                "y"
+              ],
+              "post_volume_mm3": 72249.63783730469,
+              "volume_delta_mm3": 498.72949827577395,
+              "removed_volume_mm3": 58.50778539213934
+            },
+            {
+              "mirror_axes": [
+                "x",
+                "z"
+              ],
+              "post_volume_mm3": 71750.9337381807,
+              "volume_delta_mm3": 0.025399151782039553,
+              "removed_volume_mm3": 557.2118845161312
+            },
+            {
+              "mirror_axes": [
+                "y",
+                "z"
+              ],
+              "post_volume_mm3": 72308.14562269683,
+              "volume_delta_mm3": 557.2372836679133,
+              "removed_volume_mm3": 0.0
+            },
+            {
+              "mirror_axes": [
+                "x",
+                "y",
+                "z"
+              ],
+              "post_volume_mm3": 72249.64157607884,
+              "volume_delta_mm3": 498.7332370499207,
+              "removed_volume_mm3": 58.50404661799257
+            }
+          ]
+        },
+        "simplecadapi_post_state": {
+          "volume_mm3": 71750.9337381807,
+          "surface_area_mm2": 20227.058263758445,
+          "center_mm": [
+            -15.327935639352441,
+            0.960791134275873,
+            -0.030094396463971624
+          ],
+          "body_count": 1,
+          "bbox_mm": [
+            -40.000001,
+            -29.418697570447154,
+            -51.000001,
+            1e-06,
+            39.000001,
+            51.000001
+          ],
+          "span_mm": [
+            40.000001999999995,
+            68.41869857044715,
+            102.000002
+          ]
+        },
+        "solidworks_post_state": {
+          "volume_mm3": 71750.90833902892,
+          "surface_area_mm2": 20227.05650301834,
+          "center_mm": [
+            -15.327933973709731,
+            0.9607863811945919,
+            -0.030089187979809237
+          ],
+          "bbox_mm": [
+            -40.02978715709504,
+            -28.000000000000004,
+            -51.0,
+            0.0,
+            39.0,
+            51.0
+          ],
+          "span_mm": [
+            40.02978715709504,
+            67.0,
+            102.0
+          ]
+        },
+        "post_state_delta": {
+          "volume_mm3": 0.025399151782039553,
+          "surface_area_mm2": 0.001760740105964942,
+          "center_mm": [
+            -1.665642709980375e-06,
+            4.753081281116955e-06,
+            -5.208484162386867e-06
+          ],
+          "span_mm": [
+            -0.029785157095048476,
+            1.4186985704471482,
+            1.9999999949504854e-06
+          ],
+          "bbox_mm": [
+            0.02978615709504595,
+            -1.4186975704471507,
+            -9.999999974752427e-07,
+            1e-06,
+            9.999999974752427e-07,
+            9.999999974752427e-07
+          ]
+        }
+      }
+    },
+    {
+      "feature_index": 40,
+      "feature_name": "切除-旋转3",
+      "feature_type": "RevCut",
+      "status": "ok",
+      "rule": "revcut",
+      "sketch": {
+        "segment_counts": {
+          "line": 5,
+          "arc": 0,
+          "circle": 0,
+          "unsupported": 0
+        },
+        "coordinate_system": {
+          "origin_model_m": [
+            0.0,
+            0.0,
+            0.02
+          ],
+          "x_axis_model": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "y_axis_model": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "z_axis_model": [
+            1.0,
+            -0.0,
+            0.0
+          ]
+        },
+        "runtime_coordinate_system": {
+          "origin_model_m": [
+            0.02,
+            0.0,
+            0.0
+          ],
+          "x_axis_model": [
+            -0.0,
+            0.0,
+            1.0
+          ],
+          "y_axis_model": [
+            -0.0,
+            1.0,
+            0.0
+          ],
+          "z_axis_model": [
+            -1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "matrix_mode": "inverse"
+      },
+      "simplecadapi_ops": [
+        "make_segment_redge/make_three_point_arc_redge",
+        "make_wire_from_edges_rwire/contour_wires/profile_wires",
+        "revolve_rsolid",
+        "mirror_shape/post_state_candidate_match",
+        "cut_rsolid"
+      ],
+      "details": {
+        "tool_count": 1,
+        "solidworks_selection": {
+          "selected_contours_count": 0,
+          "selected_contours": [],
+          "feature_scope_bodies_count": 1,
+          "selection_manager_after_access": {
+            "count": 0,
+            "objects": []
+          }
+        },
+        "solidworks_feature_scope": {
+          "auto_select": false,
+          "feature_scope": true,
+          "assembly_feature_scope": true,
+          "auto_select_components": true,
+          "feature_scope_bodies_count": 1,
+          "feature_scope_bodies": [
+            {
+              "name": "切除-旋转2",
+              "type_code": 0,
+              "body_box_m": [
+                -0.04008497975554369,
+                -0.028000000000000004,
+                -0.051,
+                0.0,
+                0.039,
+                0.051
+              ],
+              "mass_properties": [
+                -0.01532793397127817,
+                0.0009607863819836353,
+                -3.008918932342137e-05,
+                7.175090834118135e-05,
+                0.020227056503018342,
+                7.175090834118135e-05,
+                6.504463878399883e-08,
+                5.479159021421923e-08,
+                2.6651850962643757e-08,
+                -2.840753084539466e-10,
+                4.588701622681803e-11,
+                -2.1370399384370446e-11
+              ],
+              "selection_id": "切除-旋转2"
+            }
+          ]
+        },
+        "profile_selection": {
+          "policy": "solidworks_sketch_contour_segments",
+          "used_contour_indices": [
+            0
+          ],
+          "exported_contours_count": 1
+        },
+        "revolve_tool_selection": {
+          "policy": "post_state_volume_candidate_match",
+          "selected_mirror_axes": [
+            "x",
+            "z"
+          ],
+          "target_volume_mm3": 70824.33485576081,
+          "selected_post_volume_mm3": 70824.36025580266,
+          "selected_volume_delta_mm3": 0.025400041849934496,
+          "candidate_count": 8,
+          "candidates": [
+            {
+              "mirror_axes": [],
+              "post_volume_mm3": 71750.9337381807,
+              "volume_delta_mm3": 926.5988824198866,
+              "removed_volume_mm3": 0.0
+            },
+            {
+              "mirror_axes": [
+                "x"
+              ],
+              "post_volume_mm3": 71380.07090601852,
+              "volume_delta_mm3": 555.7360502577067,
+              "removed_volume_mm3": 370.86283216218
+            },
+            {
+              "mirror_axes": [
+                "y"
+              ],
+              "post_volume_mm3": 71750.9337381807,
+              "volume_delta_mm3": 926.5988824198866,
+              "removed_volume_mm3": 0.0
+            },
+            {
+              "mirror_axes": [
+                "z"
+              ],
+              "post_volume_mm3": 71750.9337381807,
+              "volume_delta_mm3": 926.5988824198866,
+              "removed_volume_mm3": 0.0
+            },
+            {
+              "mirror_axes": [
+                "x",
+                "y"
+              ],
+              "post_volume_mm3": 71587.464115581,
+              "volume_delta_mm3": 763.1292598201835,
+              "removed_volume_mm3": 163.46962259970314
+            },
+            {
+              "mirror_axes": [
+                "x",
+                "z"
+              ],
+              "post_volume_mm3": 70824.36025580266,
+              "volume_delta_mm3": 0.025400041849934496,
+              "removed_volume_mm3": 926.5734823780367
+            },
+            {
+              "mirror_axes": [
+                "y",
+                "z"
+              ],
+              "post_volume_mm3": 71750.9337381807,
+              "volume_delta_mm3": 926.5988824198866,
+              "removed_volume_mm3": 0.0
+            },
+            {
+              "mirror_axes": [
+                "x",
+                "y",
+                "z"
+              ],
+              "post_volume_mm3": 71587.466264659,
+              "volume_delta_mm3": 763.131408898189,
+              "removed_volume_mm3": 163.46747352169768
+            }
+          ]
+        },
+        "simplecadapi_post_state": {
+          "volume_mm3": 70824.36025580266,
+          "surface_area_mm2": 20373.92772031376,
+          "center_mm": [
+            -15.266812448366041,
+            0.5808800278628085,
+            -0.11061961838331905
+          ],
+          "body_count": 1,
+          "bbox_mm": [
+            -40.000001,
+            -29.418697570447154,
+            -51.000001,
+            1e-06,
+            39.000001,
+            51.000001
+          ],
+          "span_mm": [
+            40.000001999999995,
+            68.41869857044715,
+            102.000002
+          ]
+        },
+        "solidworks_post_state": {
+          "volume_mm3": 70824.33485576081,
+          "surface_area_mm2": 20373.92595957366,
+          "center_mm": [
+            -15.26681073830124,
+            0.5808750785478082,
+            -0.11061436961896719
+          ],
+          "bbox_mm": [
+            -40.02978715709504,
+            -28.000000000000004,
+            -51.0,
+            0.0,
+            39.0,
+            51.0
+          ],
+          "span_mm": [
+            40.02978715709504,
+            67.0,
+            102.0
+          ]
+        },
+        "post_state_delta": {
+          "volume_mm3": 0.025400041849934496,
+          "surface_area_mm2": 0.001760740102326963,
+          "center_mm": [
+            -1.7100648008749886e-06,
+            4.949315000279952e-06,
+            -5.248764351858948e-06
+          ],
+          "span_mm": [
+            -0.029785157095048476,
+            1.4186985704471482,
+            1.9999999949504854e-06
+          ],
+          "bbox_mm": [
+            0.02978615709504595,
+            -1.4186975704471507,
+            -9.999999974752427e-07,
+            1e-06,
+            9.999999974752427e-07,
+            9.999999974752427e-07
+          ]
+        }
+      }
+    },
+    {
+      "feature_index": 43,
+      "feature_name": "切除-拉伸3",
+      "feature_type": "ICE",
+      "status": "ok",
+      "rule": "cut_extrude",
+      "sketch": {
+        "segment_counts": {
+          "line": 0,
+          "arc": 0,
+          "circle": 1,
+          "unsupported": 0
+        },
+        "coordinate_system": {
+          "origin_model_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "x_axis_model": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "y_axis_model": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "z_axis_model": [
+            1.0,
+            -0.0,
+            0.0
+          ]
+        },
+        "runtime_coordinate_system": {
+          "origin_model_m": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "x_axis_model": [
+            -0.0,
+            0.0,
+            1.0
+          ],
+          "y_axis_model": [
+            -0.0,
+            1.0,
+            0.0
+          ],
+          "z_axis_model": [
+            -1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "matrix_mode": "inverse"
+      },
+      "simplecadapi_ops": [
+        "make_segment_redge/make_three_point_arc_redge/make_circle_rwire",
+        "make_wire_from_edges_rwire/contour_wires/profile_wires/region_wires",
+        "post_state_direction_candidate_match",
+        "extrude_rsolid",
+        "cut_rsolid"
+      ],
+      "details": {
+        "tool_count": 1,
+        "solidworks_selection": {
+          "selected_contours_count": 0,
+          "selected_contours": [],
+          "feature_scope_bodies_count": 1,
+          "selection_manager_after_access": {
+            "count": 0,
+            "objects": []
+          }
+        },
+        "solidworks_feature_scope": {
+          "auto_select": false,
+          "feature_scope": true,
+          "assembly_feature_scope": true,
+          "auto_select_components": true,
+          "feature_scope_bodies_count": 1,
+          "feature_scope_bodies": [
+            {
+              "name": "切除-旋转3",
+              "type_code": 0,
+              "body_box_m": [
+                -0.04008497975554369,
+                -0.028000000000000004,
+                -0.051,
+                0.0,
+                0.039,
+                0.051
+              ],
+              "mass_properties": [
+                -0.015266810735839728,
+                0.0005808750793587223,
+                -0.00011061437097770844,
+                7.082433485791325e-05,
+                0.02037392595957366,
+                7.082433485791325e-05,
+                6.420314940203209e-08,
+                5.4721190170580754e-08,
+                2.582576712945627e-08,
+                -1.5671954910137054e-10,
+                7.288106874836427e-11,
+                -1.891518589720874e-10
+              ],
+              "selection_id": "切除-旋转3"
+            }
+          ]
+        },
+        "profile_selection": {
+          "policy": "solidworks_sketch_contour_segments",
+          "used_contour_indices": [
+            0
+          ],
+          "exported_contours_count": 1
+        },
+        "extrude_direction_selection": {
+          "policy": "post_state_candidate_match",
+          "selected_ignore_reverse_direction": false,
+          "default_ignore_reverse_direction": false,
+          "selected_score": [
+            0.025398646423127502,
+            2.0976000538009933,
+            1.4484857275421916
+          ],
+          "selected_volume_delta_mm3": 0.025398646423127502,
+          "candidates": [
+            {
+              "ignore_reverse_direction": false,
+              "score": [
+                0.025398646423127502,
+                2.0976000538009933,
+                1.4484857275421916
+              ],
+              "post_volume_mm3": 69014.80288593948,
+              "volume_delta_mm3": 0.025398646423127502,
+              "center_delta_mm": [
+                -1.6828858981909889e-06,
+                5.074300062468673e-06,
+                -2.097593296615033
+              ],
+              "span_delta_mm": [
+                -0.029785157095048476,
+                1.4186985704471482,
+                1.9999999949504854e-06
+              ]
+            },
+            {
+              "ignore_reverse_direction": true,
+              "score": [
+                0.025398646423127502,
+                2.0976000538009933,
+                1.4484857275421916
+              ],
+              "post_volume_mm3": 69014.80288593948,
+              "volume_delta_mm3": 0.025398646423127502,
+              "center_delta_mm": [
+                -1.6828858981909889e-06,
+                5.074300062468673e-06,
+                -2.097593296615033
+              ],
+              "span_delta_mm": [
+                -0.029785157095048476,
+                1.4186985704471482,
+                1.9999999949504854e-06
+              ]
+            }
+          ]
+        },
+        "simplecadapi_post_state": {
+          "volume_mm3": 69014.80288593948,
+          "surface_area_mm2": 20750.91883874454,
+          "center_mm": [
+            -15.457347135570217,
+            0.5961106124221132,
+            -1.1623138110462958
+          ],
+          "body_count": 1,
+          "bbox_mm": [
+            -40.000001,
+            -29.418697570447154,
+            -51.000001,
+            1e-06,
+            39.000001,
+            51.000001
+          ],
+          "span_mm": [
+            40.000001999999995,
+            68.41869857044715,
+            102.000002
+          ]
+        },
+        "solidworks_post_state": {
+          "volume_mm3": 69014.77748729306,
+          "surface_area_mm2": 20750.917078004433,
+          "center_mm": [
+            -15.457345452684319,
+            0.5961055381220507,
+            0.935279485568737
+          ],
+          "bbox_mm": [
+            -40.02978715709504,
+            -28.000000000000004,
+            -51.0,
+            0.0,
+            39.0,
+            51.0
+          ],
+          "span_mm": [
+            40.02978715709504,
+            67.0,
+            102.0
+          ]
+        },
+        "post_state_delta": {
+          "volume_mm3": 0.025398646423127502,
+          "surface_area_mm2": 0.001760740105964942,
+          "center_mm": [
+            -1.6828858981909889e-06,
+            5.074300062468673e-06,
+            -2.097593296615033
+          ],
+          "span_mm": [
+            -0.029785157095048476,
+            1.4186985704471482,
+            1.9999999949504854e-06
+          ],
+          "bbox_mm": [
+            0.02978615709504595,
+            -1.4186975704471507,
+            -9.999999974752427e-07,
+            1e-06,
+            9.999999974752427e-07,
+            9.999999974752427e-07
+          ]
+        }
+      }
+    },
+    {
+      "feature_index": 46,
+      "feature_name": "切除-拉伸4",
+      "feature_type": "ICE",
+      "status": "ok",
+      "rule": "cut_extrude",
+      "sketch": {
+        "segment_counts": {
+          "line": 0,
+          "arc": 0,
+          "circle": 1,
+          "unsupported": 0
+        },
+        "coordinate_system": {
+          "origin_model_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "x_axis_model": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "y_axis_model": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "z_axis_model": [
+            1.0,
+            -0.0,
+            0.0
+          ]
+        },
+        "runtime_coordinate_system": {
+          "origin_model_m": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "x_axis_model": [
+            -0.0,
+            0.0,
+            1.0
+          ],
+          "y_axis_model": [
+            -0.0,
+            1.0,
+            0.0
+          ],
+          "z_axis_model": [
+            -1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "matrix_mode": "inverse"
+      },
+      "simplecadapi_ops": [
+        "make_segment_redge/make_three_point_arc_redge/make_circle_rwire",
+        "make_wire_from_edges_rwire/contour_wires/profile_wires/region_wires",
+        "post_state_direction_candidate_match",
+        "extrude_rsolid",
+        "cut_rsolid"
+      ],
+      "details": {
+        "tool_count": 1,
+        "solidworks_selection": {
+          "selected_contours_count": 0,
+          "selected_contours": [],
+          "feature_scope_bodies_count": 1,
+          "selection_manager_after_access": {
+            "count": 0,
+            "objects": []
+          }
+        },
+        "solidworks_feature_scope": {
+          "auto_select": false,
+          "feature_scope": true,
+          "assembly_feature_scope": true,
+          "auto_select_components": true,
+          "feature_scope_bodies_count": 1,
+          "feature_scope_bodies": [
+            {
+              "name": "切除-拉伸3",
+              "type_code": 0,
+              "body_box_m": [
+                -0.04008497975554369,
+                -0.028000000000000004,
+                -0.051,
+                0.0,
+                0.039,
+                0.051
+              ],
+              "mass_properties": [
+                -0.015457345450152328,
+                0.000596105538953751,
+                0.0009352794841417482,
+                6.901477748944555e-05,
+                0.020750917078004437,
+                6.901477748944555e-05,
+                6.121515505246804e-08,
+                5.1613442592458666e-08,
+                2.5672188703274387e-08,
+                -1.488809335909079e-10,
+                6.111681600789965e-10,
+                -2.3218002748517908e-10
+              ],
+              "selection_id": "切除-拉伸3"
+            }
+          ]
+        },
+        "profile_selection": {
+          "policy": "solidworks_sketch_contour_segments",
+          "used_contour_indices": [
+            0
+          ],
+          "exported_contours_count": 1
+        },
+        "extrude_direction_selection": {
+          "policy": "post_state_candidate_match",
+          "selected_ignore_reverse_direction": false,
+          "default_ignore_reverse_direction": false,
+          "selected_score": [
+            0.025400021302630194,
+            1.2385694407687775e-05,
+            1.4484857275421916
+          ],
+          "selected_volume_delta_mm3": 0.025400021302630194,
+          "candidates": [
+            {
+              "ignore_reverse_direction": false,
+              "score": [
+                0.025400021302630194,
+                1.2385694407687775e-05,
+                1.4484857275421916
+              ],
+              "post_volume_mm3": 67205.24551884668,
+              "volume_delta_mm3": 0.025400021302630194,
+              "center_delta_mm": [
+                -1.6510372571332255e-06,
+                5.206498993159947e-06,
+                -5.528158157394603e-06
+              ],
+              "span_delta_mm": [
+                -0.029785157095048476,
+                1.4186985704471482,
+                1.9999999949504854e-06
+              ]
+            },
+            {
+              "ignore_reverse_direction": true,
+              "score": [
+                0.025400021302630194,
+                1.2385694407687775e-05,
+                1.4484857275421916
+              ],
+              "post_volume_mm3": 67205.24551884668,
+              "volume_delta_mm3": 0.025400021302630194,
+              "center_delta_mm": [
+                -1.6510372571332255e-06,
+                5.206498993159947e-06,
+                -5.528158157394603e-06
+              ],
+              "span_delta_mm": [
+                -0.029785157095048476,
+                1.4186985704471482,
+                1.9999999949504854e-06
+              ]
+            }
+          ]
+        },
+        "simplecadapi_post_state": {
+          "volume_mm3": 67205.24551884668,
+          "surface_area_mm2": 21127.909957175318,
+          "center_mm": [
+            -15.65814243463865,
+            0.6121613901956879,
+            -0.11657666861273705
+          ],
+          "body_count": 1,
+          "bbox_mm": [
+            -40.000001,
+            -29.418697570447154,
+            -51.000001,
+            1e-06,
+            39.000001,
+            51.000001
+          ],
+          "span_mm": [
+            40.000001999999995,
+            68.41869857044715,
+            102.000002
+          ]
+        },
+        "solidworks_post_state": {
+          "volume_mm3": 67205.22011882538,
+          "surface_area_mm2": 21127.908196435208,
+          "center_mm": [
+            -15.658140783601393,
+            0.6121561836966948,
+            -0.11657114045457966
+          ],
+          "bbox_mm": [
+            -40.02978715709504,
+            -28.000000000000004,
+            -51.0,
+            0.0,
+            39.0,
+            51.0
+          ],
+          "span_mm": [
+            40.02978715709504,
+            67.0,
+            102.0
+          ]
+        },
+        "post_state_delta": {
+          "volume_mm3": 0.025400021302630194,
+          "surface_area_mm2": 0.0017607401096029207,
+          "center_mm": [
+            -1.6510372571332255e-06,
+            5.206498993159947e-06,
+            -5.528158157394603e-06
+          ],
+          "span_mm": [
+            -0.029785157095048476,
+            1.4186985704471482,
+            1.9999999949504854e-06
+          ],
+          "bbox_mm": [
+            0.02978615709504595,
+            -1.4186975704471507,
+            -9.999999974752427e-07,
+            1e-06,
+            9.999999974752427e-07,
+            9.999999974752427e-07
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,608 @@
+{
+  "source_json": "D:\\testModels\\sw2cadir\\examples\\upper_bracket_1\\feature_tree.json",
+  "feature_indices": [
+    19,
+    21,
+    23
+  ],
+  "report": [
+    "OK base-flange Base-Flange1: solids=1",
+    "OK cut-extrude Cut-Extrude1: tools=12",
+    "normal-cut lofted bend correction depth for Cut-Extrude2: 4.641219 mm",
+    "OK cut-extrude Cut-Extrude2: tools=6"
+  ],
+  "operation_trace": [
+    {
+      "feature_index": 19,
+      "feature_name": "Base-Flange1",
+      "feature_type": "SMBaseFlange",
+      "status": "ok",
+      "rule": "sheet_metal_base_flange",
+      "sketch": {
+        "segment_counts": {
+          "line": 2,
+          "arc": 0,
+          "circle": 0,
+          "unsupported": 0
+        },
+        "coordinate_system": {
+          "origin_model_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "x_axis_model": [
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "y_axis_model": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "z_axis_model": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "runtime_coordinate_system": {
+          "origin_model_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "x_axis_model": [
+            -0.0,
+            -0.0,
+            -1.0
+          ],
+          "y_axis_model": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "z_axis_model": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "matrix_mode": "raw"
+      },
+      "simplecadapi_ops": [
+        "make_segment_redge/make_three_point_arc_redge",
+        "make_wire_from_edges_rwire",
+        "extrude_rsolid",
+        "union_rsolid"
+      ],
+      "details": {
+        "solid_count": 1,
+        "simplecadapi_post_state": {
+          "volume_mm3": 2764.115008234623,
+          "surface_area_mm2": 2239.154839646544,
+          "center_mm": [
+            0.0,
+            -5.641838347156079,
+            -19.669500015614418
+          ],
+          "body_count": 1,
+          "bbox_mm": [
+            -10.000000100000001,
+            -21.0000001,
+            -30.000000100000005,
+            10.000000100000001,
+            1.0000000399680288e-07,
+            1.0000000133226763e-07
+          ],
+          "span_mm": [
+            20.000000200000002,
+            21.000000200000006,
+            30.000000200000006
+          ]
+        },
+        "solidworks_post_state": {
+          "volume_mm3": 2764.115008234621,
+          "surface_area_mm2": 2239.1548396465437,
+          "center_mm": [
+            -1.4962847242042393e-16,
+            -5.641838347156079,
+            -19.669500015614414
+          ],
+          "bbox_mm": [
+            -10.0,
+            -21.0,
+            -30.000000000000004,
+            10.0,
+            0.0,
+            0.0
+          ],
+          "span_mm": [
+            20.0,
+            21.0,
+            30.000000000000004
+          ]
+        },
+        "post_state_delta": {
+          "volume_mm3": 1.8189894035458565e-12,
+          "surface_area_mm2": 4.547473508864641e-13,
+          "center_mm": [
+            1.4962847242042393e-16,
+            0.0,
+            -3.552713678800501e-15
+          ],
+          "span_mm": [
+            2.0000000233721948e-07,
+            2.0000000588993316e-07,
+            2.0000000233721948e-07
+          ],
+          "bbox_mm": [
+            -1.0000000116860974e-07,
+            -1.0000000116860974e-07,
+            -1.0000000116860974e-07,
+            1.0000000116860974e-07,
+            1.0000000399680288e-07,
+            1.0000000133226763e-07
+          ]
+        }
+      }
+    },
+    {
+      "feature_index": 21,
+      "feature_name": "Cut-Extrude1",
+      "feature_type": "Cut",
+      "status": "ok",
+      "rule": "cut_extrude",
+      "sketch": {
+        "segment_counts": {
+          "line": 16,
+          "arc": 1,
+          "circle": 1,
+          "unsupported": 0
+        },
+        "coordinate_system": {
+          "origin_model_m": [
+            0.0,
+            0.0,
+            -0.03
+          ],
+          "x_axis_model": [
+            -1.0,
+            -0.0,
+            0.0
+          ],
+          "y_axis_model": [
+            0.0,
+            1.0,
+            1.6521175961683878e-16
+          ],
+          "z_axis_model": [
+            -0.0,
+            1.6521175961683878e-16,
+            -1.0
+          ]
+        },
+        "runtime_coordinate_system": {
+          "origin_model_m": [
+            0.0,
+            0.0,
+            -0.03
+          ],
+          "x_axis_model": [
+            -1.0,
+            -0.0,
+            0.0
+          ],
+          "y_axis_model": [
+            0.0,
+            1.0,
+            1.6521175961683878e-16
+          ],
+          "z_axis_model": [
+            -0.0,
+            1.6521175961683878e-16,
+            -1.0
+          ]
+        },
+        "matrix_mode": "raw"
+      },
+      "simplecadapi_ops": [
+        "make_segment_redge/make_three_point_arc_redge/make_circle_rwire",
+        "make_wire_from_edges_rwire/contour_wires/profile_wires/region_wires",
+        "post_state_direction_candidate_match",
+        "extrude_rsolid",
+        "cut_rsolid"
+      ],
+      "details": {
+        "tool_count": 12,
+        "solidworks_selection": {
+          "selected_contours_count": 0,
+          "selected_contours": [],
+          "feature_scope_bodies_count": 1,
+          "selection_manager_after_access": {
+            "count": 0,
+            "objects": []
+          }
+        },
+        "solidworks_feature_scope": {
+          "auto_select": false,
+          "feature_scope": true,
+          "assembly_feature_scope": true,
+          "auto_select_components": true,
+          "feature_scope_bodies_count": 1,
+          "feature_scope_bodies": [
+            {
+              "name": "Base-Flange1",
+              "type_code": 0,
+              "body_box_m": [
+                -0.01,
+                -0.021,
+                -0.030000000000000002,
+                0.01,
+                0.0,
+                0.0
+              ],
+              "mass_properties": [
+                -1.496284724204239e-19,
+                -0.005641838347156078,
+                -0.019669500015614415,
+                2.7641150082346215e-06,
+                0.002239154839646544,
+                2.7641150082346215e-06,
+                3.5047192283586796e-10,
+                3.4045237597069803e-10,
+                1.942938807474781e-10,
+                -2.514355408958837e-27,
+                -3.892820530775743e-26,
+                1.0081030501545834e-10
+              ],
+              "selection_id": "Base-Flange1"
+            }
+          ]
+        },
+        "region_selection": {
+          "policy": "auto_region_cluster_for_through_normal_cut",
+          "selected_indices": [
+            1,
+            4,
+            5,
+            7,
+            8,
+            9
+          ],
+          "candidate_indices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            8,
+            9
+          ],
+          "area_threshold_mm2": 10.00000000000001,
+          "area_gap_ratio": 9.499999999999993
+        },
+        "extrude_direction_selection": {
+          "policy": "post_state_candidate_match",
+          "selected_ignore_reverse_direction": false,
+          "default_ignore_reverse_direction": false,
+          "selected_score": [
+            4.547473508864641e-13,
+            6.238536035812495e-15,
+            9.000000105174877e-07
+          ],
+          "selected_volume_delta_mm3": 4.547473508864641e-13,
+          "candidates": [
+            {
+              "ignore_reverse_direction": false,
+              "score": [
+                4.547473508864641e-13,
+                6.238536035812495e-15,
+                9.000000105174877e-07
+              ],
+              "post_volume_mm3": 2405.0904142296117,
+              "volume_delta_mm3": 4.547473508864641e-13,
+              "center_delta_mm": [
+                -2.1287097911618378e-17,
+                2.6645352591003757e-15,
+                3.552713678800501e-15
+              ],
+              "span_delta_mm": [
+                2.9999999995311555e-07,
+                3.000000070585429e-07,
+                3.0000000350582923e-07
+              ]
+            },
+            {
+              "ignore_reverse_direction": true,
+              "score": [
+                4.547473508864641e-13,
+                6.238536035812495e-15,
+                9.000000105174877e-07
+              ],
+              "post_volume_mm3": 2405.0904142296117,
+              "volume_delta_mm3": 4.547473508864641e-13,
+              "center_delta_mm": [
+                -2.1287097911618378e-17,
+                2.6645352591003757e-15,
+                3.552713678800501e-15
+              ],
+              "span_delta_mm": [
+                2.9999999995311555e-07,
+                3.000000070585429e-07,
+                3.0000000350582923e-07
+              ]
+            }
+          ]
+        },
+        "simplecadapi_post_state": {
+          "volume_mm3": 2405.0904142296117,
+          "surface_area_mm2": 2088.326123023624,
+          "center_mm": [
+            -5.318068748372185e-16,
+            -4.349112017768191,
+            -18.351309791663585
+          ],
+          "body_count": 1,
+          "bbox_mm": [
+            -10.00000015,
+            -21.00000015,
+            -30.000000150000005,
+            10.00000015,
+            1.5000000266453525e-07,
+            1.5e-07
+          ],
+          "span_mm": [
+            20.0000003,
+            21.000000300000004,
+            30.000000300000007
+          ]
+        },
+        "solidworks_post_state": {
+          "volume_mm3": 2405.0904142296113,
+          "surface_area_mm2": 2088.326123023624,
+          "center_mm": [
+            -5.105197769256001e-16,
+            -4.349112017768194,
+            -18.35130979166359
+          ],
+          "bbox_mm": [
+            -10.0,
+            -20.999999999999996,
+            -30.000000000000004,
+            10.0,
+            0.0,
+            0.0
+          ],
+          "span_mm": [
+            20.0,
+            20.999999999999996,
+            30.000000000000004
+          ]
+        },
+        "post_state_delta": {
+          "volume_mm3": 4.547473508864641e-13,
+          "surface_area_mm2": 0.0,
+          "center_mm": [
+            -2.1287097911618378e-17,
+            2.6645352591003757e-15,
+            3.552713678800501e-15
+          ],
+          "span_mm": [
+            2.9999999995311555e-07,
+            3.000000070585429e-07,
+            3.0000000350582923e-07
+          ],
+          "bbox_mm": [
+            -1.4999999997655777e-07,
+            -1.500000053056283e-07,
+            -1.5000000175291461e-07,
+            1.4999999997655777e-07,
+            1.5000000266453525e-07,
+            1.5e-07
+          ]
+        }
+      }
+    },
+    {
+      "feature_index": 23,
+      "feature_name": "Cut-Extrude2",
+      "feature_type": "Cut",
+      "status": "ok",
+      "rule": "sheet_metal_lofted_bend_normal_cut",
+      "sketch": {
+        "segment_counts": {
+          "line": 7,
+          "arc": 0,
+          "circle": 0,
+          "unsupported": 0
+        },
+        "coordinate_system": {
+          "origin_model_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "x_axis_model": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "y_axis_model": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "z_axis_model": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "runtime_coordinate_system": {
+          "origin_model_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "x_axis_model": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "y_axis_model": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "z_axis_model": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "matrix_mode": "raw"
+      },
+      "simplecadapi_ops": [
+        "make_segment_redge/make_three_point_arc_redge/make_circle_rwire",
+        "make_wire_from_edges_rwire/contour_wires/profile_wires/region_wires",
+        "post_state_direction_candidate_match",
+        "extrude_rsolid",
+        "cut_rsolid"
+      ],
+      "details": {
+        "tool_count": 6,
+        "solidworks_selection": {
+          "selected_contours_count": 0,
+          "selected_contours": [],
+          "feature_scope_bodies_count": 1,
+          "selection_manager_after_access": {
+            "count": 0,
+            "objects": []
+          }
+        },
+        "solidworks_feature_scope": {
+          "auto_select": false,
+          "feature_scope": true,
+          "assembly_feature_scope": true,
+          "auto_select_components": true,
+          "feature_scope_bodies_count": 1,
+          "feature_scope_bodies": [
+            {
+              "name": "Cut-Extrude1",
+              "type_code": 0,
+              "body_box_m": [
+                -0.01,
+                -0.020999999999999998,
+                -0.030000000000000002,
+                0.01,
+                0.0,
+                0.0
+              ],
+              "mass_properties": [
+                -5.051458845369099e-19,
+                -0.0043491120177681945,
+                -0.018351309791663592,
+                2.40509041422961e-06,
+                0.002088326123023624,
+                2.40509041422961e-06,
+                2.8024369240833527e-10,
+                2.938076378886728e-10,
+                1.423095875258858e-10,
+                5.756284875792682e-27,
+                -4.879371968733586e-27,
+                6.925677173398027e-11
+              ],
+              "selection_id": "Cut-Extrude1"
+            }
+          ]
+        },
+        "profile_selection": {
+          "policy": "solidworks_sketch_contour_segments",
+          "used_contour_indices": [
+            0,
+            1
+          ],
+          "exported_contours_count": 2
+        },
+        "normal_cut": {
+          "detected_as": "sheet_metal_cross_bend_normal_cut",
+          "bend_sample_count": 64,
+          "plane_depth_mm": 6.000000000000002,
+          "bottom_z_mm": -30.0,
+          "tangent_z_mm": -23.999999999999996,
+          "correction_depth_mm": 4.641219377517702
+        },
+        "simplecadapi_post_state": {
+          "volume_mm3": 2331.861410074268,
+          "surface_area_mm2": 2027.5326465241,
+          "center_mm": [
+            -1.5458022529188302e-13,
+            -4.375018427635047,
+            -18.064282922346987
+          ],
+          "body_count": 1,
+          "bbox_mm": [
+            -10.000005,
+            -21.000005,
+            -30.000005000000005,
+            10.000005,
+            5.000000002664536e-06,
+            5e-06
+          ],
+          "span_mm": [
+            20.00001,
+            21.000010000000003,
+            30.000010000000007
+          ]
+        },
+        "solidworks_post_state": {
+          "volume_mm3": 2331.8614192465834,
+          "surface_area_mm2": 2027.3346048680546,
+          "center_mm": [
+            -2.084529259972793e-05,
+            -4.3750958693849205,
+            -18.064185140801175
+          ],
+          "bbox_mm": [
+            -10.0,
+            -20.999999999999996,
+            -30.000000000000004,
+            10.0,
+            1.734723475976807e-15,
+            0.0
+          ],
+          "span_mm": [
+            20.0,
+            20.999999999999996,
+            30.000000000000004
+          ]
+        },
+        "post_state_delta": {
+          "volume_mm3": -9.172315458272351e-06,
+          "surface_area_mm2": 0.19804165604546142,
+          "center_mm": [
+            2.0845292445147703e-05,
+            7.744174987323049e-05,
+            -9.778154581141507e-05
+          ],
+          "span_mm": [
+            9.999999999621423e-06,
+            1.000000000672685e-05,
+            1.0000000003174137e-05
+          ],
+          "bbox_mm": [
+            -4.999999999810711e-06,
+            -5.000000005139782e-06,
+            -5.000000001587068e-06,
+            4.999999999810711e-06,
+            5.000000000929812e-06,
+            5e-06
+          ]
+        }
+      }
+    }
+  ]
+}

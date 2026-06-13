@@ -1,0 +1,14 @@
+[
+  {
+    "name": "SHFT40b",
+    "part": "../your_parts/SHFT40b.sldprt",
+    "json": "shft40b/feature_tree.json",
+    "model": "shft40b/model.py"
+  },
+  {
+    "name": "Upper Bracket 1",
+    "part": "../your_parts/Upper Bracket 1.SLDPRT",
+    "json": "upper_bracket_1/feature_tree.json",
+    "model": "upper_bracket_1/model.py"
+  }
+]
